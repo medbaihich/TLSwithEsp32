@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "baihich mohamed",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 19.2, "left": -71.96, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -18.9, "left": 157.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v48", "h-96", "v-86.4" ] ],
+    [ "dht1:VCC", "esp:5V", "red", [ "v153.6", "h-268.8", "v-19.2", "h28.8" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
