@@ -294,7 +294,3 @@ For a production design:
 - Add timestamps and device identifiers to telemetry.
 - Add a backend/dashboard for visualization.
 - Replace the public test broker with a controlled MQTT deployment.
-
-## License
-
-The repository contains an MIT license file. Review the existing license notice before redistributing or reusing the project.
